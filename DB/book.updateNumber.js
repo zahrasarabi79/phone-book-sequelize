@@ -1,6 +1,5 @@
 const server = require("./server");
 const updateNumberOf = async (data) => {
-  const database = server.creatDbInstance();
   try {
     await server.database.models.books.update(
       {
